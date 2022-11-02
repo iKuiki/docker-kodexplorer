@@ -20,7 +20,7 @@ RUN docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-di
 RUN cp /usr/local/etc/php/php.ini-production /usr/local/etc/php/php.ini
 
 # 应用根目录为root避免被修改
-COPY --chown=root:root kodexplorer4.46/ /kodexplorer
+COPY --chown=root:root kodexplorer4.49/ /kodexplorer
 
 WORKDIR /kodexplorer
 
